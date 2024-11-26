@@ -35,7 +35,8 @@ Enter an operator : +
 Enter a value : c3
 Result: 15.0
 Enter an operator : =
-= 15.0```
+= 15.0
+```
 
 -例２(2+cos180°)  
 c2 と入力```Enter a value : c2```  
