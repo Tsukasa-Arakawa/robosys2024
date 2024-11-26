@@ -81,5 +81,5 @@ Enter an operator : =
 -このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．  
 -© 2024 Tsukasa Arakawa  
 
-##参考にしたウェブサイト
+## 参考にしたウェブサイト
 [https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f]
