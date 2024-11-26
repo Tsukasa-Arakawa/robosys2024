@@ -52,7 +52,8 @@ Enter an operator : +
 Enter a value : fc180
 Result: 1.0
 Enter an operator : =
-= 1.0```
+= 1.0
+```
 
 -例３ ((√4+10²)*log₄16))  
 fq4 と入力```Enter a value : fq4```  
@@ -72,7 +73,8 @@ Enter an operator : *
 Enter a value : fl4,16
 Result: 204.0
 Enter an operator : =
-= 204.0```
+= 204.0
+```
 
 
 ## ライセンス
