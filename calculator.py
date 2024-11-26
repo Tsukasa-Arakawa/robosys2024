@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
+# SPDX-FileCopyrightText: 2024 Tsukasa Arakawa <s23c1004ac@s.chibakoudai.jp>
+# SPDX-License-Identifier: BSD-3-Clause
 
 import math
 import re
