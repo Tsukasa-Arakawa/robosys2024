@@ -1,0 +1,121 @@
+#!/usr/bin/python3
+
+
+import math
+import re
+
+# 数学関数を処理
+def calculate_function(fn, input1, input2=0):
+    try:
+        if fn == 's':  # sin
+            return math.sin(math.radians(input1))
+        elif fn == 'c':  # cos
+            return math.cos(math.radians(input1))
+        elif fn == 't':  # tan
+            return math.tan(math.radians(input1))
+        elif fn == 'q':  # sqrt
+            if input1 < 0:
+                raise ValueError("Negative input for square root.")
+            return math.sqrt(input1)
+        elif fn == 'e':  # exp
+            return math.exp(input1)
+        elif fn == 'l':  # log base input1
+            if input1 <= 0 or input2 <= 0:
+                raise ValueError("Logarithm of non-positive number.")
+            return math.log(input2) / math.log(input1)
+        elif fn == 'p':  # input1^input2
+            return math.pow(input1, input2)
+        else:
+            raise ValueError("Invalid function.")
+    except ValueError as e:
+        print(f"ERROR! {e}")
+        return None
+
+# ヘルプを表示
+def print_help():
+    print("---HELP MODE---")
+    print("To enter a constant value, type 'c<number>'.")
+    print("To use a function, type 'f<function><arguments>':")
+    print("  sine: 's<number>', cosine: 'c<number>', tangent: 't<number>', square root: 'q<number>',")
+    print("  exponent: 'e<number>', logarithm (base x): 'l<base>,<number>', base^exponent: 'p<base>,<exponent>'")
+    print("To exit, type '='.")
+    print("----------------")
+
+# 入力を処理
+def parse_input(input_str):
+    input_str = input_str.strip()
+    if input_str.startswith('c'):  # Constant input
+        try:
+            return float(input_str[1:])
+        except ValueError:
+            print("ERROR! Invalid constant format.")
+            return None
+    elif input_str.startswith('f'):  # Function input
+        try:
+            fn = input_str[1]
+            if fn in ['p', 'l']:  # Two-argument functions
+                args = input_str[2:].split(',')
+                if len(args) == 2:
+                    input1, input2 = map(float, args)
+                    return calculate_function(fn, input1, input2)
+                else:
+                    raise ValueError("Expected two arguments separated by a comma.")
+            else:  # Single-argument functions
+                input1 = float(input_str[2:])
+                return calculate_function(fn, input1)
+        except (ValueError, IndexError):
+            print("ERROR! Invalid function format.")
+            return None
+    else:
+        print("ERROR! Input must start with 'c' or 'f'.")
+        return None
+
+# メインロジック
+def main():
+    print("To confirm usage, enter the 'h' key.")
+    x = 0.0
+
+    # 初期入力
+    while True:
+        mode = input("Enter a value : ")
+        if mode == 'h':
+            print_help()
+            continue
+        number = parse_input(mode)
+        if number is not None:
+            x = number
+            break
+
+    # 継続的な操作
+    while True:
+        op = input("Enter an operator : ").strip()
+        if op == '=':
+            print(f"= {x}")
+            break
+
+        mode = input("Enter a value : ")
+        number = parse_input(mode)
+
+        if number is None:
+            continue
+
+        if op == '+':
+            x += number
+        elif op == '-':
+            x -= number
+        elif op == '*':
+            x *= number
+        elif op == '/':
+            if number == 0:
+                print("ERROR! Division by zero.")
+            else:
+                x /= number
+        else:
+            print("ERROR! Invalid operator.")
+        
+        print(f"Result: {x}")
+
+if __name__ == "__main__":
+    main()
+
+
