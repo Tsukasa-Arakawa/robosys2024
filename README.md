@@ -57,7 +57,9 @@ echo "fq4 + fp10,2 + fl4,16 =" | ./calculator
 Result: 204.0
 ```
 
-
+##テスト済み環境
+- 実行環境：GitHub が提供する最新の Ubuntu ベースの仮想環境
+- Python version：3.7~3.12
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．  
 - © 2024 Tsukasa Arakawa  
