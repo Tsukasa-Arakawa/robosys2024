@@ -16,12 +16,12 @@
 定数を入力するときはｃを、関数を使うときはｆの後に対応したキーを入力してから数字を入力してください。
 
 関数の使い方  
--三角関数　s(sin),c(cos),t(tan)に対応。入力例：sin30° → fs30  
--指数関数　例：7² → fp7,2  
--対数関数  例：log₃9 → fl3,9  
--自然数e   例：e¹ → fe1  
+- 三角関数　s(sin),c(cos),t(tan)に対応。入力例：sin30° → fs30  
+- 指数関数　例：7² → fp7,2  
+- 対数関数  例：log₃9 → fl3,9  
+- 自然数e   例：e¹ → fe1  
 
--例１(12+3)  
+- 例１(12+3)  
 c12 と入力```Enter a value : c12```  
 演算子を入力```Enter an operator : +```  
 c3 と入力```Enter a value : c3```  
@@ -38,7 +38,7 @@ Enter an operator : =
 = 15.0
 ```
 
--例２(2+cos180°)  
+- 例２(2+cos180°)  
 c2 と入力```Enter a value : c2```  
 演算子を入力```Enter an operator : +```  
 fs180 と入力```Enter a value : fc180```  
@@ -55,7 +55,7 @@ Enter an operator : =
 = 1.0
 ```
 
--例３ ((√4+10²)*log₄16))  
+- 例３ ((√4+10²)*log₄16))  
 fq4 と入力```Enter a value : fq4```  
 演算子を入力```Enter an operator : +```  
 fp10,2 と入力```Enter a value : fp10,2```  
@@ -78,8 +78,8 @@ Enter an operator : =
 
 
 ## ライセンス
--このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．  
--© 2024 Tsukasa Arakawa  
+- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．  
+- © 2024 Tsukasa Arakawa  
 
 ## 参考にしたウェブサイト
 [https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f]
