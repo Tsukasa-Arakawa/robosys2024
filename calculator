@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import math
-import re
+import sys
 
 # 数学関数を処理
 def calculate_function(fn, input1, input2=0):
@@ -86,7 +86,7 @@ def main():
         if number is not None:
             x = number
             break
-
+    
     # 継続的な操作
     while True:
         op = input("Enter an operator : ").strip()
