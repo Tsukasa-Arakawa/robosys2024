@@ -17,6 +17,9 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
+    - name: Make calculator executable
+      run: chmod +x ./calculator
+
     - name: Run Python Script with input
       run: |
         echo -e "c10\n+\nc5\n=" | calculator
