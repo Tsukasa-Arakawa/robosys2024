@@ -20,8 +20,8 @@
 - 三角関数　s(sin),c(cos),t(tan)に対応。入力例：sin30° → fs30  
 - 指数関数　例：7² → fp7,2  
 - 対数関数  例：log₃9 → fl3,9  
-- 自然数e   例：e¹ → fe1  
-
+- 自然数e   例：e¹ → fe1
+  
 - 例１(12+3)  
 c12 と入力```Enter a value : c12```  
 演算子を入力```Enter an operator : +```  
@@ -57,7 +57,7 @@ echo "fq4 + fp10,2 + fl4,16 =" | ./calculator
 Result: 204.0
 ```
 
-##テスト済み環境
+## テスト済み環境
 - 実行環境：GitHub が提供する最新の Ubuntu ベースの仮想環境
 - Python version：3.7~3.12
 ## ライセンス
