@@ -12,6 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: List directory contents
+      run: ls -l /home/runner/work/robosys2024/robosys2024
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -24,4 +27,4 @@ jobs:
       run: |
         echo -e "c10\n+\nc5\n=" | calculator
         echo -e "fs30\n+\nfq25\n=" | calculator
-        echo -e "fp2,6\n*\nfl3,27\n=" | calculator
+     a   echo -e "fp2,6\n*\nfl3,27\n=" | calculator
