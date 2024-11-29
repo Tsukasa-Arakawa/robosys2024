@@ -63,4 +63,4 @@ Result: 204.0
 - <23C1004AC@s.chibakoudai.jp>
 ## 参考にしたウェブサイト
 - [GitHub の概要に関するドキュメント](https://docs.github.com/ja/get-started)
-- [[5分でマスター]初心者はまずREADMEを書け[テンプレート付き]](https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f])
+- [[5分でマスター]初心者はまずREADMEを書け[テンプレート付き]](https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f)
