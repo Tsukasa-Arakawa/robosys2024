@@ -62,4 +62,4 @@ Result: 204.0
 - © 2024 Tsukasa Arakawa  
 
 ## 参考にしたウェブサイト
-[5分でマスター]初心者はまずREADMEを書け[テンプレート付き]  [ https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f ]
+ [[5分でマスター]初心者はまずREADMEを書け[テンプレート付き]](https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f])
