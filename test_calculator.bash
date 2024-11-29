@@ -1,5 +1,6 @@
 #!/bin/bash 
-
+# SPDX-FileCopyrightText: 2024 Tsukasa Arakawa <s23c1004ac@s.chibakoudai.jp>
+# SPDX-License-Identifier: BSD-3-Clause
 
 
 # テスト1: 定数の入力と結果確認
