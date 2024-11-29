@@ -32,16 +32,6 @@ def calculate_function(fn, input1, input2=0):
         print(f"ERROR! {e}")
         return None
 
-# ヘルプを表示
-def print_help():
-    print("---HELP MODE---")
-    print("To enter a constant value, type 'c<number>'.")
-    print("To use a function, type 'f<function><arguments>':")
-    print("  sine: 's<number>', cosine: 'c<number>', tangent: 't<number>', square root: 'q<number>',")
-    print("  exponent: 'e<number>', logarithm (base x): 'l<base>,<number>', base^exponent: 'p<base>,<exponent>'")
-    print("To exit, type '='.")
-    print("----------------")
-
 # 入力を処理
 def parse_input(input_str):
     input_str = input_str.strip()
@@ -73,7 +63,7 @@ def parse_input(input_str):
 
 # メインロジック
 def main():
-    print("To confirm usage, enter the 'h' key.")
+    """print("To confirm usage, enter the 'h' key.")"""
     x = 0.0
 
     # 初期入力
@@ -86,7 +76,8 @@ def main():
         if number is not None:
             x = number
             break
-    
+
+   
     # 継続的な操作
     while True:
         op = input("Enter an operator : ").strip()
@@ -113,10 +104,8 @@ def main():
                 x /= number
         else:
             print("ERROR! Invalid operator.")
-        
+
         print(f"Result: {x}")
 
 if __name__ == "__main__":
-    main()
-
-
+    main()                                       

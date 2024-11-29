@@ -9,9 +9,6 @@
 リポジトリをクローン
 ```git clone https://github.com/Tsukasa-Arakawa/robosys2024```
 
-ディレクトリに移動
-```cd robosys2024``` 
-
 ## 使い方
 定数を入力するときはｃを、関数を使うときはｆの後に対応したキーを入力してから数字を入力してください。
 
@@ -56,13 +53,14 @@ fl4,16 と入力```Enter a value : fl4,16```
 echo "fq4 + fp10,2 + fl4,16 =" | ./calculator
 Result: 204.0
 ```
-
 ## テスト済み環境
 - 実行環境：GitHub が提供する最新の Ubuntu ベースの仮想環境
 - Python version：3.7~3.12
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．  
 - © 2024 Tsukasa Arakawa  
-
+## 連絡
+- <23C1004AC@s.chibakoudai.jp>
 ## 参考にしたウェブサイト
-([5分でマスター]初心者はまずREADMEを書け[テンプレート付き])[https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f]
+- [GitHub の概要に関するドキュメント](https://docs.github.com/ja/get-started)
+- [[5分でマスター]初心者はまずREADMEを書け[テンプレート付き]](https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f])
