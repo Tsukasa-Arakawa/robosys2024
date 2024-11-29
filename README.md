@@ -9,9 +9,6 @@
 リポジトリをクローン
 ```git clone https://github.com/Tsukasa-Arakawa/robosys2024```
 
-ディレクトリに移動
-```cd robosys2024``` 
-
 ## 使い方
 定数を入力するときはｃを、関数を使うときはｆの後に対応したキーを入力してから数字を入力してください。
 
@@ -65,4 +62,4 @@ Result: 204.0
 - © 2024 Tsukasa Arakawa  
 
 ## 参考にしたウェブサイト
-([5分でマスター]初心者はまずREADMEを書け[テンプレート付き])[https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f]
+[5分でマスター]初心者はまずREADMEを書け[テンプレート付き][ https://qiita.com/Canard_engineer_c_cpp/items/81ce4e53881138dbf37f ]
